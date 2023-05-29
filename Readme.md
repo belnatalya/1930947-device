@@ -1,6 +1,6 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «Девайс»
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Наталия Белоусова](https://up.htmlacademy.ru/htmlcss/36/student/1930947).
 * Наставник: `Неизвестно`.
 
 ---
@@ -18,7 +18,7 @@ _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`
 
 #### 2. Создайте форк
 
-[Откройте мастер-репозиторий]({{homepage}}) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
+[Откройте мастер-репозиторий](https://github.com/Komnatnaya/1930947-device) и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии скопируется в ваш аккаунт.
 
 <img width="769" alt="" src="https://user-images.githubusercontent.com/10909/29038004-a420d688-7bae-11e7-9a40-8f72e1f3cac4.jpg">
 
