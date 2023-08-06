@@ -53,57 +53,90 @@
     <main class="main-page">
       <h1 class="visually-hidden">Интернет магазин</h1>
 
-      <section class="promo">
-        <h2 class="visually-hidden">Промоакция</h2>
-
-        <img class="quadrocopter" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
-        <h3>Порхает как бабочка, жалит как пчела!</h3>
-        <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-        </p>
-
-
-        <section class="slider">
-          <h4 class="slider-title">Подробнее</h4>
+      <section class="slider">
+        <h2 class="visually-hidden">Новые поступления</h2>
+        <div class="slider-list">
+          <!-- переношу информ о кажд товаре в свой див -->
           <div class="slider-item">
-            <!-- переношу информ о кажд товаре в свой див -->
+            <div class="slider-name">01</div>
+            <img class="quadrocopter" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
+            <h3>Порхает как бабочка, жалит как пчела!</h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+              камеру.
+            </p>
+            <div class="sider-link">ПОДРОБНЕЕ</div>
+            <dl class="parameter">
+              <dt>800 м</dt>
+              <dd>Дальновидность полета</dd>
+              <dt>50 м</dt>
+              <dd>Радиус поражения</dd>
+            </dl>
           </div>
-          <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее изображение</span>
-          </button>
-          <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее изображение</span>
-          </button>
 
-          <ol class="slider-pagination">
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button slider-pagination-button-current" type="button">
-                <span class="visually-hidden">слайд 1
+          <div class="slider-item">
+            <div class="slider-name">02</div>
+            <img class="quadrocopter" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
+            <h3>Худеем правильно!</h3>
+            <p>Мотивирующие фитнес-браслеты помогут ннайти в себе силы не пропускать занятия и соблюдать диету.
+            </p>
+            <div class="sider-link">ПОДРОБНЕЕ</div>
+            <dl class="parameter">
+              <dt>48 часов</dt>
+              <dd>без подзарядки</dd>
+            </dl>
+          </div>
+        </div>
 
-                </span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">слайд 2
+        <div class="slider-item">
+          <div class="slider-name">03</div>
+          <img class="quadrocopter" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
+          <h3>Делай селфи как Бен Стиллер!</h3>
+          <p>Самая длинная палка для селфи доступна в нашем иагазине.</p>
+          <p>Восемь (Восемь Карл!) метров длиной и весом всего 5кг.</p>
+          <div class="sider-link">ПОДРОБНЕЕ</div>
+          <dl class="parameter">
+            <dt>8,5 м</dt>
+            <dd>Длина палки</dd>
+            <dt>5 кг</dt>
+            <dd>Вес палки</dd>
+            <dt>Карбон</dt>
+            <dd>Материал</dd>
+          </dl>
+        </div>
+        </div>
 
-                </span>
-              </button>
-            </li>
-            <li class="slider-pagination-item">
-              <button class="slider-pagination-button" type="button">
-                <span class="visually-hidden">слайд 3
+        <button class="slider-button slider-prev" type="button">
+          <span class="visually-hidden">Предыдущее изображение</span>
+        </button>
+        <button class="slider-button slider-next" type="button">
+          <span class="visually-hidden">Следующее изображение</span>
+        </button>
 
-                </span>
-              </button>
-            </li>
-          </ol>
-        </section>
-        <dl class="parameter">
-          <dt>800 м</dt>
-          <dd>Дальновидность полета</dd>
-          <dt>50 м</dt>
-          <dd>Радиус поражения</dd>
-        </dl>
+        <ol class="slider-pagination">
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button slider-pagination-button-current" type="button">
+              <span class="visually-hidden">слайд 1
+
+              </span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">слайд 2
+
+              </span>
+            </button>
+          </li>
+          <li class="slider-pagination-item">
+            <button class="slider-pagination-button" type="button">
+              <span class="visually-hidden">слайд 3
+
+              </span>
+            </button>
+          </li>
+        </ol>
+      </section>
+
       </section>
 
 
@@ -135,20 +168,34 @@
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
           <li class="services-item">
-            <button class="navigation-link" type="button">Доставка</button>
+            <!-- кнопка переключает к описанию -->
+            <button class="navigation-link" type="button">ДОСТАВКА</button>
+            <p class="delivery-title">Доставка</p>
+            <p class="delivery-description">Мы судовольствием доставим ваш товар прямо к вашему подьезду совершенно
+              бесплатно! Ведь мы не плохо
+              заработаем,поднимая его на ваш этаж.</p>
+            <!-- картинка -->
           </li>
           <li class="services-item">
+            <!-- кнопка переключает к описанию -->
             <button class="navigation-link" type="button">Гарантия</button>
+            <p class="delivery-title">ГАРАНТИЯ</p>
+            <p class="delivery-description">Если из-за возгорания купленного унас товара у вас сгорит дом - не
+              переживайте, мы выдадим ва новый. Товар, не дом, конечно же.</p>
+            <!-- картинка -->
           </li>
           <li class="services-item">
+            <!-- кнопка переключает к описанию -->
             <button class="navigation-link" type="button">Кредит</button>
+            <p class="delivery-title">КРЕДИТ</p>
+            <p class="delivery-description">Залузть в долговую яму стало проще! Кредитные консультанты подберут для вас
+              наиболее выгодные условия кредита. Выгодные для банка разумеется.</p>
+            <!-- картинка -->
           </li>
         </ul>
         <div class="delivery">
-          <p class="delivery-title">Доставка</p>
-          <p class="delivery-description">Мы судовольствием доставим ваш товар прямо к вашему подьезду совершенно
-            бесплатно! Ведь мы не плохо
-            заработаем,поднимая его на ваш этаж.</p>
+
+
         </div>
       </section>
 
