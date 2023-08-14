@@ -9,10 +9,13 @@
 
   <body>
 
-    <header class="main-header">
-      <a class="logo-link"><img class="logo" src="#" width="#" height="#" alt="Логотип device"></a>
+    <header class="page-header">
 
       <nav class="navigation">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="#" width="#" height="#" alt="Логотип device">
+        </a>
+
         <form></form>
 
         <ul class="input-list">
@@ -32,7 +35,7 @@
 
         <ul class="navigation-catalog">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link navigation-link-current" href="#">Каталог товаров</a>
           </li>
 
         </ul>
@@ -50,54 +53,96 @@
       </nav>
     </header>
 
-    <main class="inner-main">
+    <main class="main-inner">
       <h1 class="visually-hidden">Каталог</h1>
+
       <header class="header-catalog-monopod">
         <h2 class="monopods">Моноподы для селфи</h2>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">Главная</li>
-          <li class="breadcrumbs-item">Каталог товаров</li>
-          <li class="breadcrumbs-item">Моноподы для селфи</li>
-        </ul>
 
-        <section class="catalog-looking">
-          <h2 class="visually-hidden">Смотреть каталог</h2>
-          <div class="catalog-looking-item">
-            Фильтр
-          </div>
-          <div class="catalog-looking-item">
+        <section class="breadcrumbs">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Каталог товаров</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Моноподы для селфи</a>
+            </li>
+          </ul>
+        </section>
+
+
+        <section class="catalog-products">
+          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+
+          <section class="catalog-filter">
+            <h3 class="catalog-filter-name">Фильтр</h3>
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Цвет</legend>
+              <label class="control">
+                <input class="control-input" type="checkbox" name="black">Черный
+              </label>
+
+              <label class="control">
+                <input class="control-input" type="checkbox" name="black">Белый
+              </label>
+            </fieldset>
+
+
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Bluetooth</legend>
+
+            </fieldset>
+
+
+            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+              <button class="button" type="submit">Показать</button>
+            </form>
+          </section>
+
+
+          <div class="catalog-look-item">
             Сортиртировка
           </div>
-          <div class="catalog-looking-item">
+
+          <div class="catalog-look-item">
             Популярные
           </div>
-          <section class="catalog-photos">
-            <h3 class="visually-hidden">Каталог</h3>
-            <div class="catalog-photos-list">
-              <ul class="photo-list">
-                <li class="photo-item">
-                  <img class="#" src="#" alt="">
-                  <span class="photo-name"></span>
-                  <b class="photo-price"></b>
-                </li>
-                <li class="photo-item">
-                  <img class="#" src="#" alt="">
-                  <span class="photo-name"></span>
-                  <b class="photo-price"></b>
-                </li>
-                <li class="photo-item">
-                  <img class="#" src="#" alt="">
-                  <span class="photo-name"></span>
-                  <b class="photo-price"></b>
-                </li>
-                <li class="photo-item">
-                  <img class="#" src="#" alt="">
-                  <span class="photo-name"></span>
-                  <b class="photo-price"></b>
-                </li>
-              </ul>
-            </div>
-          </section>
+
+
+        </section>
+
+
+        <section class="catalog-photos">
+          <h3 class="visually-hidden">Каталог</h3>
+          <div class="catalog-photos-list">
+            <ul class="photo-list">
+              <li class="photo-item">
+                <img class="#" src="#" alt="">
+                <span class="photo-name"></span>
+                <b class="photo-price"></b>
+              </li>
+              <li class="photo-item">
+                <img class="#" src="#" alt="">
+                <span class="photo-name"></span>
+                <b class="photo-price"></b>
+              </li>
+              <li class="photo-item">
+                <img class="#" src="#" alt="">
+                <span class="photo-name"></span>
+                <b class="photo-price"></b>
+              </li>
+              <li class="photo-item">
+                <img class="#" src="#" alt="">
+                <span class="photo-name"></span>
+                <b class="photo-price"></b>
+              </li>
+            </ul>
+          </div>
+        </section>
         </section>
       </header>
     </main>
