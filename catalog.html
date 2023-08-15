@@ -59,92 +59,122 @@
       <header class="header-catalog-monopod">
         <h2 class="monopods">Моноподы для селфи</h2>
 
-        <section class="breadcrumbs">
-          <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="index.html">Каталог товаров</a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Моноподы для селфи</a>
-            </li>
-          </ul>
-        </section>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Главная</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">Каталог товаров</a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link">Моноподы для селфи</a>
+          </li>
+        </ul>
+      </header>
 
 
-        <section class="catalog-products">
-          <h2 class="visually-hidden">Список товаров с фильтрами</h2>
+      <section class="catalog-products">
+        <h2 class="visually-hidden">Список товаров с фильтрами</h2>
 
-          <section class="catalog-filter">
-            <h3 class="catalog-filter-name">Фильтр</h3>
+        <section class="catalog-filter">
+          <h3 class="catalog-filter-name">Фильтр</h3>
 
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Цвет</legend>
-              <label class="control">
-                <input class="control-input" type="checkbox" name="black">Черный
-              </label>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Цвет</legend>
 
-              <label class="control">
-                <input class="control-input" type="checkbox" name="black">Белый
-              </label>
-            </fieldset>
-
-
-            <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Bluetooth</legend>
-
-            </fieldset>
-
-
-            <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <button class="button" type="submit">Показать</button>
-            </form>
-          </section>
-
-
-          <div class="catalog-look-item">
-            Сортиртировка
-          </div>
-
-          <div class="catalog-look-item">
-            Популярные
-          </div>
-
-
-        </section>
-
-
-        <section class="catalog-photos">
-          <h3 class="visually-hidden">Каталог</h3>
-          <div class="catalog-photos-list">
-            <ul class="photo-list">
-              <li class="photo-item">
-                <img class="#" src="#" alt="">
-                <span class="photo-name"></span>
-                <b class="photo-price"></b>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="black" checked>Черный
+                </label>
               </li>
-              <li class="photo-item">
-                <img class="#" src="#" alt="">
-                <span class="photo-name"></span>
-                <b class="photo-price"></b>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="white" checked>Белый
+                </label>
               </li>
-              <li class="photo-item">
-                <img class="#" src="#" alt="">
-                <span class="photo-name"></span>
-                <b class="photo-price"></b>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="blue">Синий
+                </label>
               </li>
-              <li class="photo-item">
-                <img class="#" src="#" alt="">
-                <span class="photo-name"></span>
-                <b class="photo-price"></b>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="red">Красный
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pink">Розовый
+                </label>
               </li>
             </ul>
-          </div>
+          </fieldset>
+
+
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Bluetooth</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="yes">
+                  Есть
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="no">
+                  Нет
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
+            <button class="button" type="submit">Показать</button>
+          </form>
         </section>
+
+
+        <section class="select-control">
+          <h2 class="select-control-name">Сортиртировка:</h2>
         </section>
-      </header>
+
+        <section class="catalog-look-item">
+          <h2 class="select-control-name">Популярные</h2>
+        </section>
+
+
+      </section>
+
+
+      <section class="catalog-photos">
+        <h3 class="visually-hidden">Каталог</h3>
+        <div class="catalog-photos-list">
+          <ul class="photo-list">
+            <li class="photo-item">
+              <img class="#" src="#" alt="">
+              <span class="photo-name"></span>
+              <b class="photo-price"></b>
+            </li>
+            <li class="photo-item">
+              <img class="#" src="#" alt="">
+              <span class="photo-name"></span>
+              <b class="photo-price"></b>
+            </li>
+            <li class="photo-item">
+              <img class="#" src="#" alt="">
+              <span class="photo-name"></span>
+              <b class="photo-price"></b>
+            </li>
+            <li class="photo-item">
+              <img class="#" src="#" alt="">
+              <span class="photo-name"></span>
+              <b class="photo-price"></b>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
