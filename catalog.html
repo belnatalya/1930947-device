@@ -16,7 +16,10 @@
           <img class="page-header-logo" src="#" width="#" height="#" alt="Логотип device">
         </a>
 
-        <form></form>
+        <form>
+          <input type="search" name="q" placeholder="Текст поиска">
+          <input type="submit" value="Найти">
+        </form>
 
         <ul class="input-list">
           <li class="input-item">
@@ -37,8 +40,8 @@
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="#">Каталог товаров</a>
           </li>
-
         </ul>
+
         <ul class="navigation-information-list">
           <li class="navigation-information-item">
             <a class="navigation-information-link" href="#">Доставка</a>
@@ -162,7 +165,7 @@
                 <img class="product-card-image" src="#" alt="фото селфи-палка любительская">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
               </a>
-              <b class="product-card=price">500 ₽</b>
+              <span class="product-card=price">500 ₽</span>
             </li>
 
             <li class="product-card">
@@ -170,7 +173,7 @@
                 <img class="product-card-image" src="#" alt="фото селфи-палка профессиональная">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
               </a>
-              <b class="product-card=price">1500 ₽</b>
+              <span class="product-card=price">1500 ₽</span>
             </li>
 
             <li class="product-card">
@@ -178,7 +181,7 @@
                 <img class="product-card-image" src="#" alt="фото селфи-палка непотопляемая">
                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
               </a>
-              <b class="product-card=price">2500 ₽</b>
+              <span class="product-card=price">2500 ₽</span>
             </li>
 
             <li class="product-card">
@@ -190,8 +193,11 @@
             </li>
             </ul>
 
+            <div class="product-show-more">
+              <button type="button" class="button-show-more">Загрузить еще</button>
+            </div>
+
           <ul class="pagination">
-            <button class="button pagination-show-more" type="button">Загрузить еще</button>
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled">
                 <span class="pagination-title">Назад</span>
@@ -202,7 +208,6 @@
             </li>
            <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
-            </li>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">3</a>
@@ -256,20 +261,21 @@
     <footer class="page-footer">
 
       <section class="footer-logo">
-        <h1 class="visually-hidden">Логотип Девайс</h1>
+        <h2 class="visually-hidden">Логотип Девайс</h2>
         <a class="footer-logo">
           <img src="#" alt="Логотип device">
         </a>
       </section>
 
       <section class="footer-address">
-        <h1 class="visually-hidden">Как нас найти</h1>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <address class="footer-address-item">
           <a class="footer-address-map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
         </address>
       </section>
 
       <section class="footer-service">
+        <h2 class="visually-hidden">Доставка. Гарантия. Контакты.</h2>
         <ul class="footer-service-list">
           <li class="footer-service-item">
             <a href="#">ДОСТАВКА</a>
@@ -283,14 +289,14 @@
         </ul>
       </section>
       <section class="footer-phone">
-        <h1 class="visually-hidden">Как связаться</h1>
+        <h2 class="visually-hidden">Как связаться</h2>
         <a href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
       </section>
 
 
       <section class="footer-social">
-        <h1 class="visually-hidden">Найти в социальных сетях</h1>
-        <ul cl="footer-social-list">
+        <h2 class="visually-hidden">Найти в социальных сетях</h2>
+        <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
               <span class="visually-hidden">Facebooke</span>
@@ -310,7 +316,7 @@
       </section>
 
       <section class="footer-html">
-        <h1 class="visually-hidden">Ссылка на Академию</h1>
+        <h2 class="visually-hidden">Ссылка на Академию</h2>
         <a class="logo-htmlacademy" href="#"><img src="#" alt="html.academy">.htmlacademy</a>
       </section>
 

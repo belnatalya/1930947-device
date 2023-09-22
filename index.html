@@ -12,7 +12,12 @@
       <a class="logo-link"><img class="logo" src="#" width="#" height="#" alt="Логотип device"></a>
 
       <nav class="navigation">
-        <form></form>
+        <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <p class="navigation-form-search">
+            <input type="search" name="q" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
+          </p>
+        </form>
 
         <ul class="input-list">
           <li class="input-item">
@@ -57,7 +62,6 @@
       <section class="slider">
         <h2 class="visually-hidden">Новое</h2>
         <div class="slider-list">
-          <!-- переношу информ о кажд товаре в свой див -->
           <div class="slider-item">
             <div class="slider-name">01</div>
             <img class="slider-image" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
@@ -194,9 +198,9 @@
 
       </section>
 
-      <section class="product-rare">
-        <h2 class="visually-hidden">Редкий товар</h2>
-        <a class="product-rare-button" href="#">Доставим редкий товар под заказ</a>
+      <section class="product-rare-button">
+        <h2 class="product-rare-title">Доставим редкий товар</h2>
+        <button class="product-rare-button" id="rareBtn"></button>
 
       </section>
 
@@ -301,7 +305,7 @@
         <ul cl="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="#">
-              <span class="visually-hidden">Facebooke</span>
+              <span class="visually-hidden">Facebooke</span><!-- в CSS background-image -->
             </a>
           </li>
           <li class="footer-social-item">
@@ -323,6 +327,7 @@
       </section>
 
     </footer>
+
 
   </body>
 
