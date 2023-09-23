@@ -65,11 +65,14 @@
           <div class="slider-item">
             <div class="slider-name">01</div>
             <img class="slider-image" src="" width="" height="" alt="Изображение супер нового квадрокоптера">
-            <h3>Порхает как бабочка, жалит как пчела!</h3>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную
+            <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
+            <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную
               камеру.
             </p>
-            <div class="sider-link">ПОДРОБНЕЕ</div>
+            <div class="sider-link">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
             <dl class="parameter">
               <dt>800 м</dt>
               <dd>Дальновидность полета</dd>
@@ -81,24 +84,30 @@
           <div class="slider-item">
             <div class="slider-name">02</div>
             <img class="slider-image" src="" width="" height="" alt="Изображение фитес-браслета">
-            <h3>Худеем правильно!</h3>
-            <p>Мотивирующие фитнес-браслеты помогут ннайти в себе силы не пропускать занятия и соблюдать диету.
+            <h3 class="slider-title">Худеем правильно!</h3>
+            <p class="slider-description">Мотивирующие фитнес-браслеты помогут ннайти в себе силы не пропускать занятия
+              и соблюдать диету.
             </p>
-            <div class="sider-link">ПОДРОБНЕЕ</div>
-            <dl class="parameter">
-              <dt>48 часов</dt>
-              <dd>без подзарядки</dd>
-            </dl>
+            <div class="sider-link">
+              <a href="#">ПОДРОБНЕЕ</a>
+            </div>
           </div>
+          <dl class="parameter">
+            <dt>48 часов</dt>
+            <dd>без подзарядки</dd>
+          </dl>
+        </div>
         </div>
 
         <div class="slider-item">
           <div class="slider-name">03</div>
           <img class="slider-image" src="" width="" height="" alt="Изображение палка для селфи">
-          <h3>Делай селфи как Бен Стиллер!</h3>
-          <p>Самая длинная палка для селфи доступна в нашем иагазине.</p>
-          <p>Восемь (Восемь Карл!) метров длиной и весом всего 5кг.</p>
-          <div class="sider-link">ПОДРОБНЕЕ</div>
+          <h3 class="slider-title">Делай селфи как Бен Стиллер!</h3>
+          <p class="slider-description">Самая длинная палка для селфи доступна в нашем иагазине.</p>
+          <p class="slider-description">Восемь (Восемь Карл!) метров длиной и весом всего 5кг.</p>
+          <div class="sider-link">
+            <a href="#">ПОДРОБНЕЕ</a>
+          </div>
           <dl class="parameter">
             <dt>8,5 м</dt>
             <dd>Длина палки</dd>
@@ -168,29 +177,35 @@
 
       <section class="service">
         <h2 class="visually-hidden">Услуги</h2>
+        <ul class="service-list-btn">
+          <li class="service-link">
+            <button type="button">ДОСТАВКА</button>
+          </li>
+          <li class="service-link">
+            <button type="button">Гарантия</button>
+          </li>
+          <li class="service-link">
+            <button type="button">Кредит</button>
+          </li>
+        </ul>
+
         <ul class="service-list">
           <li class="service-item">
-            <!-- кнопка переключает к описанию -->
-            <button class="navigation-link" type="button">ДОСТАВКА</button>
-            <p class="delivery-title">Доставка</p>
-            <p class="delivery-description">Мы судовольствием доставим ваш товар прямо к вашему подьезду совершенно
+            <p class="service-title">Доставка</p>
+            <p class="service-description">Мы судовольствием доставим ваш товар прямо к вашему подьезду совершенно
               бесплатно! Ведь мы не плохо
               заработаем,поднимая его на ваш этаж.</p>
             <!-- картинка -->
           </li>
           <li class="service-item">
-            <!-- кнопка переключает к описанию -->
-            <button class="navigation-link" type="button">Гарантия</button>
-            <p class="delivery-title">ГАРАНТИЯ</p>
-            <p class="delivery-description">Если из-за возгорания купленного унас товара у вас сгорит дом - не
+            <p class="service-title">ГАРАНТИЯ</p>
+            <p class="service-description">Если из-за возгорания купленного унас товара у вас сгорит дом - не
               переживайте, мы выдадим ва новый. Товар, не дом, конечно же.</p>
             <!-- картинка -->
           </li>
           <li class="service-item">
-            <!-- кнопка переключает к описанию -->
-            <button class="navigation-link" type="button">Кредит</button>
-            <p class="delivery-title">КРЕДИТ</p>
-            <p class="delivery-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+            <p class="service-title">КРЕДИТ</p>
+            <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
               наиболее выгодные условия кредита. Выгодные для банка разумеется.</p>
             <!-- картинка -->
           </li>
@@ -198,11 +213,9 @@
 
       </section>
 
-      <section class="product-rare-button">
-        <h2 class="product-rare-title">Доставим редкий товар</h2>
-        <button class="product-rare-button" id="rareBtn"></button>
-
-      </section>
+      <div class="product-rare">
+        <button class="product-rare-button" id="rareBtn">Доставим редкий товар</button>
+      </div>
 
 
       <section class="company">
@@ -242,7 +255,7 @@
           </ul>
         </div>
         <div class="contacts-item">
-          <form class="write-form">Напишите нам</form>
+          <a href="#" class="write-form">Напишите нам</a>
         </div>
       </section>
       </div>
