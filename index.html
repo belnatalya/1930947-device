@@ -3,13 +3,15 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="styles/styles.css" rel="stylesheet">
     <title>HTML Academy: Девайс</title>
   </head>
 
   <body>
 
     <header class="page-header">
-      <a class="logo-link"><img class="logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device"></a>
+      <a class="logo-link"><img class="logo" src="images/logo/logo.svg" width="145" height="36"
+          alt="Логотип device"></a>
 
       <nav class="navigation">
         <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
@@ -36,35 +38,35 @@
 
         <ul class="navigation-catalog">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="navigation-link" href="#catalog">Каталог товаров</a>
           </li>
 
         </ul>
         <ul class="navigation-information-list">
           <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Доставка</a>
+            <a class="navigation-information-link" href="#delivery">Доставка</a>
           </li>
           <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Гарантия</a>
+            <a class="navigation-information-link" href="#warranty">Гарантия</a>
           </li>
           <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Контакты</a>
+            <a class="navigation-information-link" href="#contacts">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
-
     <main class="main-page">
       <h1 class="visually-hidden">Интернет магазин</h1>
 
-
       <section class="slider">
         <h2 class="visually-hidden">Новое</h2>
+
         <div class="slider-list">
           <div class="slider-item">
             <div class="slider-name">01</div>
-            <img class="slider-image" src="images/catalog/slider-1.png" width="560" height="560" alt="Изображение супер нового квадрокоптера">
+            <img class="slider-image" src="images/catalog/slider-1.png" width="560" height="560"
+              alt="Изображение супер нового квадрокоптера">
             <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
             <p class="slider-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
               замаскированным под стандартную
@@ -80,10 +82,10 @@
               <dd>Радиус поражения</dd>
             </dl>
           </div>
-
           <div class="slider-item">
             <div class="slider-name">02</div>
-            <img class="slider-image" src="images/catalog/slider-2.png" width="560" height="560" alt="Изображение фитес-браслета">
+            <img class="slider-image" src="images/catalog/slider-2.png" width="560" height="560"
+              alt="Изображение фитес-браслета">
             <h3 class="slider-title">Худеем правильно!</h3>
             <p class="slider-description">Мотивирующие фитнес-браслеты помогут ннайти в себе силы не пропускать занятия
               и соблюдать диету.
@@ -101,7 +103,8 @@
 
         <div class="slider-item">
           <div class="slider-name">03</div>
-          <img class="slider-image" src="images/catalog/slider-3.png" width="560" height="560" alt="Изображение палка для селфи">
+          <img class="slider-image" src="images/catalog/slider-3.png" width="560" height="560"
+            alt="Изображение палка для селфи">
           <h3 class="slider-title">Делай селфи как Бен Стиллер!</h3>
           <p class="slider-description">Самая длинная палка для селфи доступна в нашем иагазине.</p>
           <p class="slider-description">Восемь (Восемь Карл!) метров длиной и весом всего 5кг.</p>
@@ -150,15 +153,14 @@
         </ol>
       </section>
 
-
       <section class="catalog">
-        <h2 class="visually-hidden">Каталог</h2>
+        <h2 class="visually-hidden" id="catalog">Каталог</h2>
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-link" href="#">Виртуальная реальность</a>
           </li>
           <li class="catalog-item">
-            <a class="catalog-link" href="#">Моноподы для селфи</a>
+            <a class="catalog-link" href="catalog.html">Моноподы для селфи</a>
           </li>
           <li class="catalog-item">
             <a class="catalog-link" href="#">Экшн-камеры</a>
@@ -190,14 +192,14 @@
         </ul>
 
         <ul class="service-list">
-          <li class="service-item">
+          <li class="service-item" id="delivery">
             <p class="service-title">Доставка</p>
             <p class="service-description">Мы судовольствием доставим ваш товар прямо к вашему подьезду совершенно
               бесплатно! Ведь мы не плохо
               заработаем,поднимая его на ваш этаж.</p>
             <!-- картинка -->
           </li>
-          <li class="service-item">
+          <li class="service-item" id="warranty">
             <p class="service-title">ГАРАНТИЯ</p>
             <p class="service-description">Если из-за возгорания купленного унас товара у вас сгорит дом - не
               переживайте, мы выдадим ва новый. Товар, не дом, конечно же.</p>
@@ -210,13 +212,12 @@
             <!-- картинка -->
           </li>
         </ul>
-
       </section>
 
-      <div class="product-rare">
-        <button class="product-rare-button" id="rareBtn">Доставим редкий товар</button>
-      </div>
-
+      <section class="product-rare">
+        <h2 class="visually-hidden">Редкий товар</h2>
+        <button class="product-rare-button" id="rare">Доставим редкий товар</button>
+      </section>
 
       <section class="company">
         <h2 class="company-name">О нас</h2>
@@ -234,21 +235,19 @@
         </div>
       </section>
 
-
       <section class="contacts">
-        <h3 class="contacts-title">Контакты</h3>
+        <h2 class="contacts-title">Контакты</h2>
         <p class="contacts-description">Вы можете забрать товар сами,заехав в наш офис. Заодно сможете проверить
           работоспособность покупки.</p>
         <div class="contacts-item">
-          <h4 class="contacts-item-name">Интернет-магазин "Девайс"</h4>
+          <h3 class="contacts-item-name">Интернет-магазин "Девайс"</h3>
           <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
             <a class="contacts-phone" href="tel:+78128121212">+7(812)812-12-12</a>
           </address>
         </div>
-
         <div class="contacts-item">
-          <h4 class="contacts-item-name">Время работы</h4>
+          <h3 class="contacts-item-name">Время работы</h3>
           <ul class="contacts-item-list">
             <li class="contacts-item-list-time">пн-пт: с 10:00 до 22:00</li>
             <li class="contacts-item-list-time">сб-вс: с 10:00 до 19:00</li>
@@ -258,9 +257,6 @@
           <a href="#" class="write-form">Напишите нам</a>
         </div>
       </section>
-      </div>
-      </section>
-
 
       <section class="newsletter">
         <h2 class="newsletter-name">Подпишишитесь на рассылку</h2>
@@ -272,29 +268,28 @@
           <input class="field" type="email" name="newsletter-email" id="newsletter-email">
           <button class="button" type="submit">Подписаться</button>
         </form>
-
         <span>Это бесплатно</span>
       </section>
     </main>
 
-
     <footer class="page-footer">
 
       <section class="footer-logo">
-        <h1 class="visually-hidden">Логотип Девайс</h1>
+        <h2 class="visually-hidden">Логотип Девайс</h2>
         <a class="footer-logo">
           <img src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип device">
         </a>
       </section>
 
       <section class="footer-address">
-        <h1 class="visually-hidden">Как нас найти</h1>
+        <h2 class="visually-hidden">Как нас найти</h2>
         <address class="footer-address-item">
           <a class="footer-address-map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
         </address>
       </section>
 
       <section class="footer-service">
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="footer-service-list">
           <li class="footer-service-item">
             <a href="#">ДОСТАВКА</a>
@@ -307,40 +302,39 @@
           </li>
         </ul>
       </section>
-      <section class="footer-phone">
-        <h1 class="visually-hidden">Как связаться</h1>
+      <section class="footer-phone" id="contacts">
+        <h2 class="visually-hidden">Как связаться</h2>
         <a href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
       </section>
 
-
       <section class="footer-social">
-        <h1 class="visually-hidden">Найти в социальных сетях</h1>
+        <h2 class="visually-hidden">Найти в социальных сетях</h2>
         <ul cl="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Facebooke</span><!-- в CSS background-image -->
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
+            <a class="button" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Instagram</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Instagram</span>
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <span class="visually-hidden">Twitter</span>
             </a>
           </li>
         </ul>
       </section>
 
       <section class="footer-html">
-        <h1 class="visually-hidden">Ссылка на Академию</h1>
-        <a class="logo-htmlacademy" href="#"><img src="images/logo/logo-academy.svg" width="115" height="33" alt="html.academy">.htmlacademy</a>
+        <h2 class="visually-hidden">Ссылка на Академию</h2>
+        <a class="logo-htmlacademy" href="#"><img src="images/logo/logo-academy.svg" width="115" height="33"
+            alt="html.academy"></a>
       </section>
 
     </footer>
-
 
   </body>
 
