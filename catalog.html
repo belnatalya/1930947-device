@@ -14,18 +14,18 @@
         <a class="navigation-logo" href="index.html">
           <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
         </a>
-
         <form>
           <input type="search" name="q" placeholder="Текст поиска">
           <input type="submit" value="Найти">
         </form>
-
         <ul class="input-list">
           <li class="input-item">
-            <a class="input-link" href="#">Войти</a>
+            <a class="input-link" href="#">Коля Петухов</a>
+          </li>
+          <li class="input-item">
+            <a class="input-exit">Выйти</a>
           </li>
         </ul>
-
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link">Сравнить</a>
@@ -34,13 +34,11 @@
             <a class="navigation-link">Корзина</a>
           </li>
         </ul>
-
         <ul class="navigation-catalog">
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current" href="#catalog">Каталог товаров</a>
           </li>
         </ul>1
-
         <ul class="navigation-information-list">
           <li class="navigation-information-item">
             <a class="navigation-information-link" href="#">Доставка</a>
@@ -58,7 +56,6 @@
     <main class="main-container">
       <header class="header-catalog-monopod">
         <h1 class="monopods">Моноподы для селфи</h1>
-
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -74,19 +71,16 @@
 
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
-
         <section class="catalog-filter">
           <h3 class="catalog-filter-name">Фильтр</h3>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-
             <div class="catalog-filter-cost">
-              <h4 class="catalog-filter-name">Стоимость</h4>
+              <h4 class="catalog-filter-cost-name">Стоимость</h4>
               <input type="range" min="0" max="5000" value="10" class="cost" id="rangeCost">
             </div>
 
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Цвет</legend>
-
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -132,24 +126,24 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Показать</button>
+            <button class="button-show" type="submit">Показать</button>
           </form>
         </section>
 
         <section class="sorting">
           <h3 class="sorting-name">Сортиртировка:</h3>
           <select class="select-control" aria-label="Сортиртировка">
-            <option value="popular">Популярные</option>
+            <option class="select-control-popular" value="popular">Популярные</option>
             <option value="new">Новое</option>
           </select>
-
-          <a class="button-top" href="#">
-            <span class="visually-hidden">Вверх</span>
-          </a>
-          <a class="button-bottom" href="#">
-            <span class="visually-hidden">Вниз</span>
-          </a>
-
+          <div class="control">
+            <a class="button-top" href="#">
+              <span class="visually-hidden">Вверх</span>
+            </a>
+            <a class="button-bottom" href="#">
+              <span class="visually-hidden">Вниз</span>
+            </a>
+          </div>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -157,7 +151,7 @@
                   alt="фото селфи-палка любительская">
                 <h3 class="product-card-title">Любительская селфи-палка</h3>
               </a>
-              <span class="product-card=price">500 ₽</span>
+              <span class="product-card-price">500 ₽</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -165,7 +159,7 @@
                   alt="фото селфи-палка профессиональная">
                 <h3 class="product-card-title">Профессиональная селфи-палка</h3>
               </a>
-              <span class="product-card=price">1500 ₽</span>
+              <span class="product-card-price">1500 ₽</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -173,7 +167,7 @@
                   alt="фото селфи-палка непотопляемая">
                 <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
               </a>
-              <span class="product-card=price">2500 ₽</span>
+              <span class="product-card-price">2500 ₽</span>
             </li>
             <li class="product-card">
               <a class="product-card-link" href="product.html">
@@ -181,14 +175,12 @@
                   alt="фото селфи-палка в виде руки">
                 <h3 class="product-card-title">Селфи-палка "Следуй за мной"</h3>
               </a>
-              <span class="product-card=price">1500 ₽</span>
+              <span class="product-card-price">1500 ₽</span>
             </li>
           </ul>
-
           <div class="product-show-more">
             <button type="button" class="button-show-more">Загрузить еще</button>
           </div>
-
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-prev pagination-disabled">
@@ -224,42 +216,39 @@
       <section class="footer-logo">
         <h2 class="visually-hidden">Логотип Девайс</h2>
         <a class="footer-logo">
-          <img src="#" alt="Логотип device">
+          <img src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип device">
         </a>
       </section>
-
       <section class="footer-address">
         <h2 class="visually-hidden">Как нас найти</h2>
         <address class="footer-address-item">
           <a class="footer-address-map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
         </address>
       </section>
-
       <section class="footer-service">
-        <h2 class="visually-hidden">Доставка. Гарантия. Контакты.</h2>
+        <h2 class="visually-hidden">Услуги</h2>
         <ul class="footer-service-list">
           <li class="footer-service-item">
-            <a href="#">ДОСТАВКА</a>
+            <a class="footer-service-link href=" #">ДОСТАВКА</a>
           </li>
           <li class="footer-service-item">
-            <a href="#">ГАРАНТИЯ</a>
+            <a class="footer-service-link" href="#">ГАРАНТИЯ</a>
           </li>
           <li class="footer-service-item">
-            <a href="#">КОНТАКТЫ</a>
+            <a class="footer-service-link" href="#">КОНТАКТЫ</a>
           </li>
         </ul>
       </section>
-      <section class="footer-phone">
+      <section class="footer-phone" id="contacts">
         <h2 class="visually-hidden">Как связаться</h2>
-        <a href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
+        <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
       </section>
-
       <section class="footer-social">
         <h2 class="visually-hidden">Найти в социальных сетях</h2>
-        <ul class="footer-social-list">
+        <ul cl="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebooke</span>
+              <span class="visually-hidden">Facebooke</span><!-- в CSS background-image -->
             </a>
           </li>
           <li class="footer-social-item">
@@ -274,15 +263,12 @@
           </li>
         </ul>
       </section>
-
       <section class="footer-html">
         <h2 class="visually-hidden">Ссылка на Академию</h2>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/"><img src="images/logo/logo-academy.svg" width="115" height="33"
-            alt="html.academy"></a>
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/"><img src="images/logo/logo-academy.svg" width="115"
+            height="33" alt="html.academy"></a>
       </section>
-
     </footer>
-
   </body>
 
 </html>

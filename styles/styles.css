@@ -60,7 +60,7 @@ a {
   line-height: normal;
   font-weight: 800;
   letter-spacing: 3.6px;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .navigation-information-link {
@@ -69,8 +69,9 @@ text-transform: uppercase;
   line-height: normal;
   font-weight: 800;
   letter-spacing: 3.6px;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
+
 .slider-name {
   color: #ffffff;
   text-align: right;
@@ -78,38 +79,44 @@ text-transform: uppercase;
   font-size: 180px;
   font-weight: 700;
   line-height: 200px;
- background-color: #ffe17f;
+  background-color: #ffe17f;
 }
+
 .slider-title {
-color: #000000;
-font-family: Raleway;
-font-size: 50px;
-font-weight: 800;
-line-height: 50px;
+  color: #000000;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
+
 .slider-description {
   font-family: Rubik;
   font-size: 18px;
   font-weight: 400;
 }
+
 .slider-link-name {
   color: #000000;
   text-align: center;
-font-family: Raleway;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.6px;
-text-transform: uppercase;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
+
 .parameter-term {
-color: #000000;
-font-size: 36px;
-font-weight: 400;
+  color: #000000;
+  font-size: 36px;
+  font-weight: 400;
 }
+
 .parameter-description {
   font-size: 16px;
   font-weight: 400;
 }
+
 .catalog-link {
   color: #000000;
   font-family: Raleway;
@@ -117,18 +124,20 @@ font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.36px;
 }
+
 .catalog-item {
   list-style-type: none;
 }
+
 .service-link {
-color: #000000;
-text-align: center;
-font-family: Raleway;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.6px;
-text-transform: uppercase;
-list-style-type: none;
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+  list-style-type: none;
 }
 
 .service-title {
@@ -138,9 +147,11 @@ list-style-type: none;
   font-weight: 800;
   line-height: 50px;
 }
+
 .service-item {
   list-style-type: none;
 }
+
 .service-description {
   font-weight: 400;
 }
@@ -155,50 +166,60 @@ list-style-type: none;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
+
 .company-information {
-color: #000000;
-font-family: Raleway;
-font-size: 50px;
-font-weight: 800;
-line-height: 50px;
+  color: #000000;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
+
 .company-description {
-font-weight: 400;
+  font-weight: 400;
 }
+
 .company-postal-line {
   color: #000000;
   font-weight: 700;
   line-height: 20px;
   letter-spacing: -0.36px;
 }
+
 .company-more {
-color: #000000;
-text-align: center;
-font-family: Raleway;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.6px;
-text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
+
 .contacts-description {
   font-weight: 400;
 }
+
 .contacts-item-name {
   font-size: 24px;
   font-weight: 700;
 }
+
 .contacts-address-text {
   font-weight: 400;
   font-style: normal;
 }
+
 .contacts-phone {
   font-weight: 400;
   font-style: normal;
   text-decoration-line: underline;
 }
+
 .contacts-item-list-time {
   font-weight: 400;
 }
+
 .write-form {
   color: #000000;
   text-align: center;
@@ -208,44 +229,53 @@ text-transform: uppercase;
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
+
 .newsletter-name {
-color: #000000;
-font-family: Raleway;
-font-size: 50px;
-font-weight: 800;
-line-height: 50px;
+  color: #000000;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
 }
+
 .newsletter-description {
   font-weight: 400;
 }
+
 .newsletter-email {
   font-weight: 400;
 }
+
 .button-newsletter {
-color: #000000;
-text-align: center;
-font-family: Raleway;
-font-weight: 800;
-line-height: normal;
-letter-spacing: 3.6px;
-text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 }
+
 .newsletter-gratis {
   font-weight: 400;
 }
+
 .page-footer {
   background-color: #444444;
 }
+
 .footer-address-map-link {
-color: #ffffff;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
 }
+
 .footer-service-item {
   list-style-type: none;
 }
+
 .footer-service-link {
   color: #ffffff;
   font-family: Raleway;
@@ -253,23 +283,123 @@ line-height: 20px;
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
+
 .footer-phone-link {
-color: #ffffff;
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-decoration-line: underline;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration-line: underline;
 }
 
+.input-exit {
+  color: #000000;
+  font-weight: 400;
+}
 
+.monopods {
+  color: #000000;
+  font-family: Raleway;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+}
 
+.breadcrumbs-link {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
 
+.catalog-filter-name {
+  color: #000000;
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: normal;
+  font-weight: 800;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
 
+.catalog-filter-cost-name {
+  color: #000000;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
 
+.catalog-filter-title {
+  color: #000000;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.36px;
+}
 
+.control-input {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-show {
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
+.sorting-name {
+  color: #000000;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.2px;
+  text-transform: uppercase;
+}
+.select-control-popular {
+  color: #000000;
+  font-weight: 400;
+}
+.product-card{
+list-style-type: none;
+}
+.product-card-title {
+color: #000000;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: -0.36px;
+}
+.product-card-price {
+  text-align: right;
+  font-weight: 400;
+  line-height: normal;
+}
+.button-show-more {
+color: #000000;
+text-align: center;
+font-family: Raleway;
+font-size: 16px;
+font-weight: 800;
+line-height: normal;
+letter-spacing: 3.2px;
+text-transform: uppercase;
+}
+.pagination-item {
+  list-style-type: none;
+}
+.pagination-title {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
 
-
-
+}
 
 
 
