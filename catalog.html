@@ -10,46 +10,50 @@
 
   <body>
     <header class="page-header">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
+      </a>
       <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
-        </a>
-        <form>
-          <input type="search" name="q" placeholder="Текст поиска">
-          <input type="submit" value="Найти">
-        </form>
-        <ul class="input-list">
-          <li class="input-item">
-            <a class="input-link" href="#">Коля Петухов</a>
-          </li>
-          <li class="input-item">
-            <a class="input-exit">Выйти</a>
-          </li>
-        </ul>
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link">Сравнить</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link">Корзина</a>
-          </li>
-        </ul>
-        <ul class="navigation-catalog">
-          <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#catalog">Каталог товаров</a>
-          </li>
-        </ul>1
-        <ul class="navigation-information-list">
-          <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Доставка</a>
-          </li>
-          <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Гарантия</a>
-          </li>
-          <li class="navigation-information-item">
-            <a class="navigation-information-link" href="#">Контакты</a>
-          </li>
-        </ul>
+        <div class="navigation-orientation">
+          <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
+            <input type="search" name="q" placeholder="Текст поиска">
+            <input type="submit" value="Найти">
+          </form>
+          <ul class="input-list">
+            <li class="input-item">
+              <a class="input-link" href="#">Коля Петухов</a>
+            </li>
+            <li class="input-item">
+              <a class="input-exit">Выйти</a>
+            </li>
+          </ul>
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a class="navigation-link">Сравнить</a>
+            </li>
+            <li class="navigation-item">
+              <a class="navigation-link">Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navigation-orientation">
+          <ul class="navigation-catalog">
+            <li class="navigation-catalog-item">
+              <a class="navigation-catalog-link navigation-catalog-link-current" href="#catalog">Каталог товаров</a>
+            </li>
+          </ul>
+          <ul class="navigation-information-list">
+            <li class="navigation-information-item">
+              <a class="navigation-information-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation-information-item">
+              <a class="navigation-information-link" href="#">Гарантия</a>
+            </li>
+            <li class="navigation-information-item">
+              <a class="navigation-information-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -131,7 +135,7 @@
         </section>
 
         <section class="sorting">
-          <h3 class="sorting-name">Сортиртировка:</h3>
+          <h3 class="sorting-name">Сортировка:</h3>
           <select class="select-control" aria-label="Сортиртировка">
             <option class="select-control-popular" value="popular">Популярные</option>
             <option value="new">Новое</option>
@@ -181,33 +185,33 @@
           <div class="product-show-more">
             <button type="button" class="button-show-more">Загрузить еще</button>
           </div>
-          <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-prev pagination-disabled">
-                <span class="pagination-title">Назад</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link" href="#">_</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link">15</a>
-            </li>
-            <li class="pagination-item">
-              <a class="pagination-link pagination-next" href="#">
-                <span class="pagination-title">Вперед</span>
-              </a>
-            </li>
-          </ul>
+
+          <div class="pagination">
+            <a class="pagination-title pagination-prev pagination-disabled">
+              Назад
+            </a>
+            <ul class="pagination-item pagination-item-numbers">
+              <li class="pagination-item">
+                <a class="pagination-link pagination-current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">_</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link">15</a>
+              </li>
+            </ul>
+            <a class="pagination-title pagination-next" href="#">
+              Вперед
+            </a>
+          </div>
+
         </section>
       </section>
     </main>
