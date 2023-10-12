@@ -37,8 +37,6 @@ html {
 body {
   min-width: 1440px;
   margin: 0;
-  padding-left: 140px;
-  padding-right: 140px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -46,6 +44,12 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+}
+
+.container {
+  width: 1040px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .main-container {
@@ -432,19 +436,10 @@ width: 1160px;
 height: 253px;
 display: flex;
 } */
-.header-container {
-  width: 1440px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding-left: 60px;
-  padding-right: 60px;
-
-}
+.header-container {}
 
 .navigation-header {
-  width: 1040px;
-  height: 200px;
+  padding: 0 60px;
   display: flex;
   flex-direction: column;
 
@@ -457,19 +452,9 @@ display: flex;
 }
 
 .navigation-row {
-  width: 1040px;
-  display: flex;
+display: flex;
 }
 
-.navigation-row-1 {
-
-  height: 40px;
-}
-
-.navigation-row-2 {
-  height: 50px;
-  padding-top: 30px;
-}
 
 .navigation-input-list {
   display: flex;
@@ -517,78 +502,56 @@ display: flex;
 }
 
 .catalog-list {
-  width: 1040px;
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
-.catalog-item {
-  width: 160px;
-  height: 260px;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.catalog-name {}
 
 .catalog-item {
+  min-width: 160px;
+  min-height: 260px;
   background-color: #ffe17f;
-  margin-right: 40px;
 }
 
 .catalog-item:last-child {
-  margin-right: 40px;
+
 }
 
-.catalog-item-1 {
-  width: 160px;
-  height: 160px;
-
+.catalog-item-virtual {
   background-image: url("../images/categorias/virtual.svg");
 }
 
-.catalog-item-2 {
-  width: 160px;
-  height: 160px;
+.catalog-item-monopod {
   background-image: url("../images/categorias/monopod.svg");
 }
 
-.catalog-item-3 {
-  width: 160px;
-  height: 160px;
+.catalog-item-camera {
   background-image: url("../images/categorias/camera.svg");
 }
 
-.catalog-item-4 {
-  width: 160px;
-  height: 160px;
+.catalog-item-bracelet {
   background-image: url("../images/categorias/bracelet.svg");
 }
 
-.catalog-item-5 {
-  width: 160px;
-  height: 160px;
+.catalog-item-clocks {
   background-image: url("../images/categorias/clocks.svg");
 }
 
-.catalog-item-6 {
-  width: 160px;
-  height: 160px;
+.catalog-item-quadrocopter {
   background-image: url("../images/categorias/quadrocopter.svg");
 }
 
 .service {
-  width: 1060px;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
+  margin-bottom: 50px;
 
 }
 
 .service-list {
   width: 280px;
-  padding-top: 50px;
+padding-top: 50px;
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
@@ -596,7 +559,6 @@ display: flex;
 }
 
 .product-rare-button {
-  width: 1060px;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -604,9 +566,7 @@ display: flex;
 }
 
 .company {
-  width: 1040px;
-  margin: 0 auto;
-
+  margin 0 auto;
   display: flex;
 }
 
@@ -618,11 +578,25 @@ display: flex;
 }
 
 .newsletter {
-  width: 100%;
-  height: 420px;
-  margin: 50px 100px;
+  background-color: #f0f0f0;
+  padding-bottom: 60px;
+}
+.newsletter-item{
+  display: flex;
+}
+.newsletter-name{
+  padding: 5px 50px 50px 0;
 }
 
+.newsletter-description{
+padding: 50px 50px 50px 35px;
+}
+.newsletter-item-form{
+display: flex;
+}
+.newsletter-gratis{
+margin: 0 0 30px 200px;
+}
 .page-footer {
   width: 100%;
 }
