@@ -9,17 +9,17 @@
   </head>
 
   <body>
-    <header class="page-header">
-      <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
-      </a>
-      <nav class="navigation">
-        <div class="navigation-orientation">
+    <header class="header-container container">
+      <nav class="navigation-header container">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
+        </a>
+        <div class="navigation-row">
           <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <input type="search" name="q" placeholder="Текст поиска">
-            <input type="submit" value="Найти">
+            <input class="navigation-form-search-name" type="search" name="q" placeholder="Текст поиска">
+            <button class="navigation-form-search-button" type="submit">Найти</button>
           </form>
-          <ul class="input-list">
+          <ul class="navigation-input-list">
             <li class="input-item">
               <a class="input-link" href="#">Коля Петухов</a>
             </li>
@@ -55,10 +55,7 @@
           </ul>
         </div>
       </nav>
-    </header>
-
-    <main class="main-container">
-      <header class="header-catalog-monopod">
+      <section class="header-catalog-monopod">
         <h1 class="monopods">Моноподы для селфи</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -71,9 +68,13 @@
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
         </ul>
-      </header>
+      </section>
+    </header>
 
-      <section class="catalog-products">
+
+
+    <main class="main-container-catalog">
+      <section class="catalog-products container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <section class="catalog-filter">
           <h3 class="catalog-filter-name">Фильтр</h3>
