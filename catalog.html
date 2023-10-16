@@ -10,12 +10,12 @@
 
   <body>
     <header class="header-container container">
-      <nav class="navigation-header container">
-        <a class="navigation-logo" href="index.html">
+      <nav class="navigation-header">
+        <a class="logo-link" href="index.html">
           <img class="page-header-logo" src="images/logo/logo.svg" width="145" height="36" alt="Логотип device">
         </a>
         <div class="navigation-row">
-          <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
+          <form class="navigation-form navigation-list" action="https://echo.htmlacademy.ru/courses" method="get">
             <input class="navigation-form-search-name" type="search" name="q" placeholder="Текст поиска">
             <button class="navigation-form-search-button" type="submit">Найти</button>
           </form>
@@ -36,7 +36,7 @@
             </li>
           </ul>
         </div>
-        <div class="navigation-orientation">
+        <div class="navigation-row">
           <ul class="navigation-catalog">
             <li class="navigation-catalog-item">
               <a class="navigation-catalog-link navigation-catalog-link-current" href="#catalog">Каталог товаров</a>
@@ -57,7 +57,7 @@
       </nav>
       <section class="header-catalog-monopod">
         <h1 class="monopods">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -71,16 +71,14 @@
       </section>
     </header>
 
-
-
-    <main class="main-container-catalog">
+    <main class="main-container-catalog ">
       <section class="catalog-products container">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
         <section class="catalog-filter">
           <h3 class="catalog-filter-name">Фильтр</h3>
           <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="catalog-filter-cost">
-              <h4 class="catalog-filter-cost-name">Стоимость</h4>
+              Стоимость
               <input type="range" min="0" max="5000" value="10" class="cost" id="rangeCost">
             </div>
 
@@ -114,6 +112,7 @@
                 </li>
               </ul>
             </fieldset>
+
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Bluetooth</legend>
               <ul class="catalog-filter-list">
@@ -135,7 +134,7 @@
           </form>
         </section>
 
-        <section class="sorting">
+        <section class="sorting-catalog">
           <h3 class="sorting-name">Сортировка:</h3>
           <select class="select-control" aria-label="Сортиртировка">
             <option class="select-control-popular" value="popular">Популярные</option>
@@ -190,7 +189,7 @@
             <a class="pagination-title pagination-prev pagination-disabled">
               Назад
             </a>
-            <ul class="pagination-item pagination-item-numbers">
+            <ul class="pagination-list pagination-item-numbers">
               <li class="pagination-item">
                 <a class="pagination-link pagination-current">1</a>
               </li>
@@ -215,63 +214,71 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <section class="footer-logo">
-        <h2 class="visually-hidden">Логотип Девайс</h2>
-        <a class="footer-logo">
-          <img src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип device">
-        </a>
-      </section>
-      <section class="footer-address">
-        <h2 class="visually-hidden">Как нас найти</h2>
-        <address class="footer-address-item">
-          <a class="footer-address-map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
-        </address>
-      </section>
-      <section class="footer-service">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="footer-service-list">
-          <li class="footer-service-item">
-            <a class="footer-service-link href=" #">ДОСТАВКА</a>
-          </li>
-          <li class="footer-service-item">
-            <a class="footer-service-link" href="#">ГАРАНТИЯ</a>
-          </li>
-          <li class="footer-service-item">
-            <a class="footer-service-link" href="#">КОНТАКТЫ</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phone" id="contacts">
-        <h2 class="visually-hidden">Как связаться</h2>
-        <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Найти в социальных сетях</h2>
-        <ul cl="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
-              <span class="visually-hidden">Facebooke</span><!-- в CSS background-image -->
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.instagram.com/htmlacademy">
-              <span class="visually-hidden">Instagram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
-              <span class="visually-hidden">Twitter</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-html">
-        <h2 class="visually-hidden">Ссылка на Академию</h2>
-        <a class="logo-htmlacademy" href="https://htmlacademy.ru/"><img src="images/logo/logo-academy.svg" width="115"
-            height="33" alt="html.academy"></a>
-      </section>
+    <footer class="footer-container container">
+      <div class="container">
+        <section class="footer-logo">
+          <h2 class="visually-hidden">Логотип Девайс</h2>
+          <a class="footer-logo">
+            <img src="images/logo/logo-yellow.svg" width="145" height="36" alt="Логотип device">
+          </a>
+        </section>
+        <div class="footer-container-information">
+          <section class="footer-address">
+            <h2 class="visually-hidden">Как нас найти</h2>
+            <address class="footer-address-item">
+              <a class="footer-address-map-link" href="#">Санкт-Петербург, набережная реки Карповки, 5, литера П.</a>
+            </address>
+          </section>
+          <section class="footer-service">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ul class="footer-service-list">
+              <li class="footer-service-item">
+                <a class="footer-service-link href=" #">ДОСТАВКА</a>
+              </li>
+              <li class="footer-service-item">
+                <a class="footer-service-link" href="#">ГАРАНТИЯ</a>
+              </li>
+              <li class="footer-service-item">
+                <a class="footer-service-link" href="#">КОНТАКТЫ</a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-phone" id="contacts">
+            <h2 class="visually-hidden">Как связаться</h2>
+            <a class="footer-phone-link" href="tel:+78128121212">Тел.:+7(812)812-12-12</a>
+          </section>
+        </div>
+        <div class="page-footer-container footer-row-bottom">
+          <section class="footer-social">
+            <h2 class="visually-hidden">Найти в социальных сетях</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item-facebooke">
+                <a class="button" href="https://www.facebook.com/htmlacademy">
+                  <span class="visually-hidden">Facebooke</span><!-- в CSS background-image -->
+                </a>
+              </li>
+              <li class="footer-social-item-instagram">
+                <a class="button" href="https://www.instagram.com/htmlacademy">
+                  <span class="visually-hidden">Instagram</span>
+                </a>
+              </li>
+              <li class="footer-social-item-twitter">
+                <a class="button" href="https://twitter.com/htmlacademy_ru">
+                  <span class="visually-hidden">Twitter</span>
+                </a>
+              </li>
+            </ul>
+          </section>
+          <section class="footer-html">
+            <h2 class="visually-hidden">Ссылка на Академию</h2>
+            <a class="logo-htmlacademy" href="https://htmlacademy.ru/"><img src="images/logo/logo-academy.svg"
+                width="115" height="33" alt="html.academy"></a>
+          </section>
+        </div>
+      </div>
+
     </footer>
+
   </body>
 
 </html>
