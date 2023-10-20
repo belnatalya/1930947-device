@@ -176,6 +176,7 @@ a {
 
 .catalog-item {
   list-style-type: none;
+background-repeat: no-repeat;
 }
 
 .service-link {
@@ -534,40 +535,43 @@ justify-content: space-between;
 .catalog-list {
   display: flex;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 
-.catalog-item {
-  min-width: 160px;
-  min-height: 260px;
-  background-color: #ffe17f;
-}
+
 
 .catalog-item:last-child {
   margin-right: 0;
 }
-
-.catalog-item-virtual {
+.catalog-link {
+  min-width: 160px;
+  min-height: 260px;
+  background-color: #ffe17f;
+  display: block;
+  background-repeat: no-repeat;
+}
+.catalog-link-virtual {
   background-image: url("../images/categorias/virtual.svg");
 }
 
-.catalog-item-monopod {
+.catalog-link-monopod {
   background-image: url("../images/categorias/monopod.svg");
 }
 
-.catalog-item-camera {
+.catalog-link-camera {
   background-image: url("../images/categorias/camera.svg");
 }
 
-.catalog-item-bracelet {
+.catalog-link-bracelet {
   background-image: url("../images/categorias/bracelet.svg");
 }
 
-.catalog-item-clocks {
+.catalog-link-clocks {
   background-image: url("../images/categorias/clocks.svg");
 }
 
-.catalog-item-quadrocopter {
+.catalog-link-quadrocopter {
   background-image: url("../images/categorias/quadrocopter.svg");
 }
 
@@ -668,25 +672,29 @@ justify-content: space-between;
 }
 .footer-social-list {
   display: flex;
-
+}
+.footer-button{
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0,8);
+  border-radius: 50%;
+  display: block;
+  margin: 8px;
 }
 
-.footer-social-item-facebooke {
-  width: 40px;
-  background-image: url("../images/icons/facebook.svg");
+.footer-button-facebooke {
+  background-image: url("../images/icons/facebook.svg") ;
 }
 
-.footer-social-item-instagram {
-  width: 40px;
+.footer-button-instagram {
   background-image: url("../images/icons/instagram.svg");
 }
 
-.footer-social-item-twitter {
-  width: 40px;
+.footer-button-twitter {
   background-image: url("../images/icons/twitter.svg");
 }
 
-.footer-row-bottom {
+.page-footer-container {
   display: flex;
   padding-left: 115px;
 }
@@ -699,8 +707,7 @@ justify-content: space-between;
   width: 500px;
   display: flex;
   padding-left: 0;
-
-  outline: 1px solid blue;
+outline: 1px solid blue;
 }
 
 .breadcrumbs-item {
