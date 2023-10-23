@@ -83,6 +83,7 @@ a {
   position: relative;
   padding-left: 27px;
 }
+
 .navigation-link::before {
   content: "";
   width: 15px;
@@ -93,9 +94,11 @@ a {
   left: 0;
   top: 3px;
 }
+
 .navigation-link-chart::before {
   background-image: url("../images/icons/chart.svg");
 }
+
 .navigation-link-basket::before {
   background-image: url("../images/icons/basket.svg");
 }
@@ -127,11 +130,27 @@ a {
 
 .navigation-catalog-link {
   color: #000000;
+
   font-family: "Raleway", sans-serif;
   line-height: normal;
   font-weight: 800;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  position: relative;
+  padding: 15px 70px 15px 0;
+  outline: 1px solid green;
+}
+
+.navigation-catalog-link::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-image: url("../images/icons/Ellipse.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .navigation-catalog-item {
@@ -170,7 +189,7 @@ a {
 .navigation-list {
   display: flex;
   justify-content: space-between;
-  width: 250px;
+  width: 280px;
   outline: 1px solid blue;
 }
 
@@ -289,10 +308,12 @@ a {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  margin: 25px 0;
 }
 
 .service-item {
   list-style-type: none;
+
 }
 
 .product-rare-button {
@@ -570,7 +591,7 @@ a {
   display: flex;
   position: absolute;
   right: 0;
-  bottom: 150px;
+  bottom: 110px;
 }
 
 .slider-pagination-button {
@@ -667,12 +688,30 @@ a {
 }
 
 .service-list {
+  margin: 0;
   width: 500px;
+
 }
 
 .service-item {
   display: none;
+  position: relative;
+  padding-right: 250px;
+  outline: 1px solid green;
+
 }
+
+.service-item::after {
+  content: "";
+  width: 136px;
+  height: 164px;
+  display: inline-block;
+  background-image: url(../images/icons/delivery.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+
+}
+
 
 .service-item-active {
   display: block;
