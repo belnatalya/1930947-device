@@ -86,8 +86,7 @@ a {
 
 .navigation-link::before {
   content: "";
-  width: 15px;
-  height: 12px;
+
   display: inline-block;
   background-repeat: no-repeat;
   position: absolute;
@@ -97,10 +96,14 @@ a {
 
 .navigation-link-chart::before {
   background-image: url("../images/icons/chart.svg");
+width: 10px;
+  height: 12px;
 }
 
 .navigation-link-basket::before {
   background-image: url("../images/icons/basket.svg");
+  width: 16px;
+  height: 14px;
 }
 
 .input-link {
@@ -114,7 +117,7 @@ a {
   content: "";
   display: inline-block;
   width: 15px;
-  height: 12px;
+  height: 13px;
   background-image: url("../images/icons/user.svg");
   background-repeat: no-repeat;
   position: absolute;
@@ -130,8 +133,7 @@ a {
 
 .navigation-catalog-link {
   color: #000000;
-
-  font-family: "Raleway", sans-serif;
+font-family: "Raleway", sans-serif;
   line-height: normal;
   font-weight: 800;
   letter-spacing: 3.6px;
@@ -146,8 +148,8 @@ a {
   width: 50px;
   height: 50px;
   display: inline-block;
-  background-image: url("../images/icons/Ellipse.svg");
-  background-repeat: no-repeat;
+  border:1px solid #444444;
+ border-radius: 50%;
   position: absolute;
   right: 0;
   top: 0;
@@ -325,8 +327,10 @@ a {
   line-height: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  position: relative;
+  padding-left: 200px;
+  padding-right: 200px;
 }
-
 .company-information {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -334,7 +338,10 @@ a {
   font-weight: 800;
   line-height: 50px;
 }
-
+.company-postal-lines{
+  margin-bottom: 30px;
+  padding: 0;
+}
 .company-postal-line {
   color: #000000;
   font-weight: 700;
@@ -351,21 +358,32 @@ a {
   letter-spacing: 3.6px;
   text-transform: uppercase;
 }
-
-.contacts-item-name {
+.contacts-item{
+  margin-bottom: 30px;
+}
+.contacts-name {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 15px;
 }
 
 .contacts-address-text {
   font-style: normal;
+margin-bottom: 0;
 }
 
 .contacts-phone {
   font-style: normal;
   text-decoration-line: underline;
+  color: #000000;
 }
+.contacts-list{
+  padding: 0;
+}
+.contacts-time{
+list-style-type: none;
 
+}
 .write-form {
   color: #000000;
   text-align: center;
@@ -672,14 +690,21 @@ a {
 }
 
 .service {
-  margin-bottom: 50px;
-
+  margin-bottom: 35px;
 }
 
 .service-container {
   display: flex;
 }
-
+.service-button{
+  color: #000000;
+  text-align: center;
+  font-family: Raleway;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  text-transform: uppercase;
+}
 .service-list-button {
   width: 250px;
   padding-left: 20px;
@@ -689,19 +714,23 @@ a {
 
 .service-list {
   margin: 0;
-  width: 500px;
-
+  width: 850px;
 }
-
+.service-link{
+  margin-bottom: 20px;
+}
 .service-item {
-  display: none;
+display: none;
   position: relative;
   padding-right: 250px;
   outline: 1px solid green;
 
 }
+.service-item-active {
+  display: block;
+}
 
-.service-item::after {
+.service-item-delivery::after {
   content: "";
   width: 136px;
   height: 164px;
@@ -709,12 +738,31 @@ a {
   background-image: url(../images/icons/delivery.svg);
   background-repeat: no-repeat;
   position: absolute;
-
+left: 700px;
+bottom: 10px;
+}
+.service-item-warranty::after{
+  content: "";
+  width: 171px;
+  height: 195px;
+  display: inline-block;
+  background-image: url(../images/icons/warranty.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+left: 700px;
+bottom: 0;
 }
 
-
-.service-item-active {
-  display: block;
+.service-item-credit::after{
+  content: "";
+  width: 156px;
+  height: 188px;
+  display: inline-block;
+  background-image: url(../images/icons/credit.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+left: 700px;
+bottom: 0;
 }
 
 .product-rare-button {
@@ -722,22 +770,74 @@ a {
   align-items: center;
   margin: 0 auto;
   margin-bottom: 50px;
-  padding: 25px 0;
+  padding: 38px 315px;
+  position: relative;
 }
-
+.product-rare-button::before{
+  content: "";
+  width: 125px;
+  height: 100px;
+  display: block;
+  background-image: url(../images/icons/truck.svg);
+  background-repeat: no-repeat;
+  background-color: #ffe17f;
+  background-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product-rare-button::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-image: url(../images/icons/info-gray.svg);
+  background-repeat: no-repeat;
+  background-color: #e7e2e2;
+border-radius: 50%;
+  position: absolute;
+  background-position: center;
+  right: 25px;
+  top: 30px;
+}
 .company {
   padding: 30px 0;
   display: flex;
-
+  justify-content: space-between;
 }
 
 .company-information {
   width: 520px;
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 50px;
 }
-
+.company-description{
+  margin-bottom: 30px;
+}
+.company-postal{
+  width: 520px;
+}
+.company-postal-line{
+margin-bottom: 19px;
+list-style-type: none;
+position: relative;
+padding-left: 34px;
+}
+.company-postal-line::before{
+  content: "";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ffe17f;
+  position: absolute;
+  left: 0;
+  top: 6px;
+}
+.company-contacts{
+  width: 550px;
+}
 .newsletter {
   background-color: #f0f0f0;
   padding-bottom: 60px;
