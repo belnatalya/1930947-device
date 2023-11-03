@@ -256,7 +256,9 @@ a {
 .navigation-information-item {
   flex-grow: 1;
 }
-
+.slider-item{
+margin-bottom: 70px;
+}
 .slider-name {
   color: #ffffff;
   text-align: right;
@@ -273,17 +275,21 @@ a {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  width: 545px;
+  margin: 0;
+  margin-bottom: 29px;
 }
 
 .slider-description {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
+  margin: 0;
+  margin-bottom: 50px;
 }
-
-.slider-link-name {
-
+.sider-link{
+  margin: 0;
+  margin-bottom: 50px;
 }
-
 .slider-button {
   width: 20px;
   height: 60px;
@@ -306,6 +312,7 @@ a {
 
 .parameter {
   display: flex;
+  margin: 0;
 }
 
 .parameter-term {
@@ -320,8 +327,15 @@ a {
 
 .parameter-wrapper {
   margin-right: 20px;
+  margin-bottom: 38px;
 }
-
+.parameter-term{
+  margin-bottom: 12px;
+}
+.catalog-list{
+  margin: 0;
+  margin-bottom: 70px;
+}
 .catalog-link {
   color: #000000;
   font-family: "Raleway", sans-serif;
@@ -365,6 +379,18 @@ a {
   font-size: 50px;
   font-weight: 800;
   line-height: 50px;
+  position: relative;
+  padding-top: 40px;
+}
+.company-information::before{
+  content: "";
+  width: 84px;
+  height: 7px;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .company-postal-lines {
@@ -567,6 +593,8 @@ a {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  border: none;
+
 }
 
 .sorting-name {
@@ -754,7 +782,7 @@ a {
 }
 
 .service-container {
-  display: flex;
+display: flex;
 }
 
 .service-button {
@@ -765,13 +793,17 @@ a {
   line-height: normal;
   letter-spacing: 3.6px;
   text-transform: uppercase;
+  border: none;
+  width: 280px;
 }
 
 .service-list-button {
-  width: 250px;
+  width: 280px;
   padding-left: 20px;
   padding-top: 50px;
   padding-bottom: 50px;
+  display: block;
+  text-align: center;
 }
 
 .service-list {
@@ -876,7 +908,7 @@ a {
 }
 
 .company {
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   display: flex;
   justify-content: space-between;
 }
