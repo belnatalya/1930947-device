@@ -804,13 +804,27 @@ display: flex;
   padding-bottom: 50px;
   display: block;
   text-align: center;
+  position: relative;
+  padding-right: 7px;
+  height: 319px;
 }
 
 .service-list {
   margin: 0;
+  padding-left: 116px;
   width: 850px;
-}
 
+}
+.service-list-button::after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #000000;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .service-link {
   margin-bottom: 20px;
 }
@@ -835,7 +849,7 @@ display: flex;
   background-image: url(../images/icons/delivery.svg);
   background-repeat: no-repeat;
   position: absolute;
-  left: 700px;
+  left: 600px;
   bottom: 10px;
 }
 
@@ -1092,13 +1106,19 @@ display: flex;
 }
 
 .product-card {
-
-  outline: 1px solid blue;
+outline: 1px solid blue;
 }
 
-
-
-
+.product-card-information{
+  display: flex;
+  justify-content: space-between;
+}
+.product-card-title{
+width: 235px;
+}
+.product-card-price{
+  padding-top: 15px;
+}
 
 
 
